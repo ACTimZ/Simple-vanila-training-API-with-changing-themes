@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            padding-top: 150px;
+        }
+        article {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        button {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            align-items: center;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 15px 35px;
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 100px;
+            border: none;
+            transition: .3s;
+            cursor: pointer;
+            background-color: antiquewhite;
+            &:hover {
+                background-color: rgb(39, 39, 39);
+                color: white;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <button onclick="changeTheme()">
+        <article>Тема:</article>
+        <article class="dark_and_light"></article>
+    </button>
+    <article>
+        <h1 style="font-size: 35px;">IP:</h1>
+        <p style="font-size: 25px;"></p>
+    </article>
+    <script src="script.js"></script>
+</body>
+</html>
